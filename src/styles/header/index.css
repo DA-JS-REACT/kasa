@@ -1,0 +1,19 @@
+.headerWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.nav-header {
+    font-size:2rem;
+    text-align:right;
+    color:var(--primary-color);
+}
+.nav-header a:first-child {
+    margin-right: 57px;
+}
+
+.active {
+    text-decoration: underline;
+}

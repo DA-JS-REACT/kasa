@@ -1,0 +1,33 @@
+.errorWrapper {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    color: var(--primary-color);
+    margin-top:var(--margin-element);
+}
+.errorBody {
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    width: 100%;
+    
+}
+.errorBody {
+    overflow-wrap:break-word;
+}
+
+.errorBody-title{
+    font-size: 24rem;
+}
+
+.errorBody-message {
+    font-size: 3rem;
+}
+
+.errorLink {
+    margin-top:calc(var(--margin-element) + 20px);
+    text-align:center;
+}
+.errorLink a {
+    font-size:1.5rem;
+}
