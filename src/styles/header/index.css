@@ -3,10 +3,11 @@
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
+    margin-bottom:10px;
 }
 
 .nav-header {
-    font-size:2rem;
+    font-size:var(--nav-footer);
     text-align:right;
     color:var(--primary-color);
 }
@@ -17,3 +18,17 @@
 .active {
     text-decoration: underline;
 }
+@media (max-width: 768px) {
+    .nav-header{
+        --nav-footer:1rem;
+        text-transform: uppercase;
+    }
+    .nav-header a:first-child {
+        margin-right: 20px;
+    }
+   .logo {
+     width: 8rem;
+     height:2.5rem;
+   }
+
+  }
