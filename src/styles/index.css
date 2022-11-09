@@ -35,8 +35,8 @@ a {
 
 .container {
   margin: var(--margin-body);
- 
-
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 768px) {
@@ -48,6 +48,8 @@ a {
 @import  url(./header/index.css);
 @import url(./footer/index.css);
 @import url(./home//index.css);
-@import url(./fiche/index.css);
+@import url(./banner//index.css);
+@import url(./location/index.css);
 @import url(./error/index.css);
 @import url(./loader/index.css);
+@import url(./dropdown/index.css);

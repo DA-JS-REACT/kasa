@@ -1,4 +1,5 @@
 import img from '../../assets/img.png'
+import Banner from '../../components/Banner'
 import Card from '../../components/Card'
 import Loader from '../../components/loader'
 import { useFetch } from '../../hooks'
@@ -15,12 +16,7 @@ function Home() {
 
     return (
         <div className="homeWrapper">
-            <section className="home-info">
-                <img className="home-info__img" src={img} alt="" />
-                <h1 className="home-info__title">
-                    Chez vous, partout et ailleurs
-                </h1>
-            </section>
+            <Banner img={img} title="Chez vous, partout et ailleurs" />
             {isLoading ? (
                 <Loader />
             ) : (
@@ -32,15 +28,6 @@ function Home() {
                             cover={logement.cover}
                             title={logement.title}
                         />
-
-                        // <article key={logement.id} className="card">
-                        //     <img
-                        //         className="card-img"
-                        //         src={logement.cover}
-                        //         alt={logement.cover}
-                        //     />
-                        //     <h2 className="card-title">{logement.title}</h2>
-                        // </article>
                     ))}
                 </section>
             )}

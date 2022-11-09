@@ -3,7 +3,7 @@ import angle from '../../assets/angle.svg'
 
 function Dropdown({ title, children }) {
     return (
-        <div className="fiche-detail__dropdown">
+        <div className="dropdownWrapper">
             <div className=" dropdown">
                 <div className="dropdown-header">
                     <span className="dropdown-header__title">{title}</span>
