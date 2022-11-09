@@ -1,9 +1,13 @@
 :root {
   /* color */
-  --background-body:#E5E5E5;
+  /* #E5E5E5*/
+  --background-body:#FFFFFF;
   --background-footer: #000000;
+  --background-card:#F7F7F7;
   --primary-color: #FF6060;
   --secondary-color: #FFFFFF;
+  --tertiary-color: #F6F6F6;
+  
 
   /* font */
   --font: 'Montserrat';
@@ -44,5 +48,6 @@ a {
 @import  url(./header/index.css);
 @import url(./footer/index.css);
 @import url(./home//index.css);
+@import url(./fiche/index.css);
 @import url(./error/index.css);
 @import url(./loader/index.css);

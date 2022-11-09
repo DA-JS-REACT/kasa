@@ -6,6 +6,7 @@ import Error from '../Error'
 import Footer from '../Footer'
 import Home from '../../pages/Home'
 import About from '../../pages/About'
+import Location from '../../pages/Location'
 
 function App() {
     return (
@@ -15,6 +16,9 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="*" element={<Error />} />
+                <Route path="/location">
+                    <Route path=":indexCard" element={<Location />} />
+                </Route>
             </Routes>
             <Footer />
         </div>
