@@ -38,6 +38,7 @@
 
 .dropdown-header__img {
     transform: rotate(180deg);
+    cursor: pointer;
 }
 .dropdown:hover .dropdown-header_img {
     /* transform: rotate(0deg); */
@@ -64,3 +65,9 @@
     50% { opacity: 0.5;}
     100% { opacity: 1;}
 }
+
+@media (max-width: 768px) {
+    .dropdown {
+        height: 100px;
+    }
+  }

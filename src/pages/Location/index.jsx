@@ -23,36 +23,36 @@ function Location() {
                     .filter((id) => id.id === indexCard)
                     .map((detail) => (
                         <article key={detail.id} className="location">
-                            <Carousel pictures={detail.pictures[0]} />
+                            <Carousel pictures={detail.pictures} />
                             <div className="location-header">
                                 <div className="location-header__title">
-                                    <h1>{detail.title}</h1>
-                                    <p>{detail.location}</p>
+                                    <div className="location-title">
+                                        <h1>{detail.title}</h1>
+                                        <p>{detail.location}</p>
+                                    </div>
+                                    <div className="location-tag">
+                                        {detail.tags.map((tag) => (
+                                            <span className="tag" key={tag}>
+                                                {tag}
+                                            </span>
+                                        ))}
+                                    </div>
                                 </div>
-                                <div className="location-header__host">
-                                    <p className="host-name">
-                                        {detail.host.name}
-                                    </p>
-                                    <img
-                                        className="host-img"
-                                        src={detail.host.picture}
-                                        alt=""
-                                    />
-                                </div>
-                            </div>
-                            <div className="location-tagRate">
-                                <div className="location-tagRate__tag">
-                                    {detail.tags.map((tag) => (
-                                        <span
-                                            className="location-tag"
-                                            key={tag}
-                                        >
-                                            {tag}
-                                        </span>
-                                    ))}
-                                </div>
-                                <div className="location-tagRate__rate">
-                                    <Rating rate={detail.rating} />
+                                <div className="location-header__info">
+                                    <div className="location-host">
+                                        <p className="host-name">
+                                            {detail.host.name}
+                                        </p>
+                                        <img
+                                            className="host-img"
+                                            src={detail.host.picture}
+                                            alt=""
+                                        />
+                                    </div>
+
+                                    <div className="location-rate">
+                                        <Rating rate={detail.rating} />
+                                    </div>
                                 </div>
                             </div>
                             <div className="location-detail">
