@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
-    margin-bottom:10px;
+    height:4rem;
 }
 
 .nav-header {
@@ -19,6 +19,9 @@
     text-decoration: underline;
 }
 @media (max-width: 768px) {
+    .headerWrapper {
+        height:3.8rem
+    }
     .nav-header{
         --nav-footer:1rem;
         text-transform: uppercase;

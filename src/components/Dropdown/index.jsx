@@ -23,13 +23,22 @@ function Dropdown({ title, children }) {
                         alt={angle}
                     />
                 </div>
-                {isOpen ? (
+                {/* {isOpen ? (
                     <div className=" dropdown-content dropdown-content-open">
                         {children}
                     </div>
                 ) : (
                     <div className=" dropdown-content ">{children}</div>
-                )}
+                )} */}
+                <div
+                    className={
+                        isOpen
+                            ? 'dropdown-content dropdown-content-open'
+                            : 'dropdown-content dropdown-content-close'
+                    }
+                >
+                    {children}
+                </div>
             </div>
         </div>
     )

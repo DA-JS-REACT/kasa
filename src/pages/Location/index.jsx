@@ -3,7 +3,6 @@ import { useFetch } from '../../hooks'
 import Dropdown from '../../components/Dropdown'
 import Loader from '../../components/loader'
 import Rating from '../../components/Rating'
-import star from '../../assets/star.svg'
 import Carousel from '../../components/Caroussel'
 function Location() {
     const { indexCard } = useParams()

@@ -37,6 +37,7 @@ a {
   margin: var(--margin-body);
   display: flex;
   flex-direction: column;
+  justify-content:space-between;
 }
 
 @media (max-width: 768px) {
@@ -45,11 +46,12 @@ a {
   }
 
 }
-@import  url(./header/index.css);
+@import url(./header/index.css);
 @import url(./footer/index.css);
 @import url(./home//index.css);
 @import url(./banner//index.css);
 @import url(./location/index.css);
+@import url(./about/index.css);
 @import url(./error/index.css);
 @import url(./loader/index.css);
 @import url(./dropdown/index.css);
