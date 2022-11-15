@@ -13,10 +13,17 @@
     width: 100%;
     height: 100%;
 }
+
 .caroussel-left,
 .caroussel-right {
     position: absolute;
     top: 45%;
+}
+.caroussel-left:active {
+    transform: translateY(-1px);
+}
+.caroussel-right:active {
+    transform: translateY(1px);
 }
 .caroussel-counter {
     color: var(--secondary-color);

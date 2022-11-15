@@ -1,9 +1,27 @@
 .aboutWrapper {
-    width: 100%;
+    width: 1240px;
+    max-width: 1240px;
+    height: auto;
     margin-top: var(--margin-element);
+    margin-bottom:59px;
 }
 
 .about {
     width: 80%;
     margin: var(--margin-element) auto;
+}
+
+.about .dropdownWrapper:nth-child(n) {
+    margin-top:20px;
+}
+
+@media screen and (max-width: 375px) {
+    .aboutWrapper {
+        width:335px;
+        margin-bottom:19px;
+    }
+
+    .about {
+        width:100%;
+    }
 }

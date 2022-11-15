@@ -4,6 +4,8 @@
     justify-content:space-between;
     align-items: center;
     height:4rem;
+    width: 1240px;
+    max-width: 1240px;
 }
 
 .nav-header {
@@ -18,9 +20,11 @@
 .active {
     text-decoration: underline;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 375px) {
     .headerWrapper {
+        width:335px;
         height:3.8rem
+
     }
     .nav-header{
         --nav-footer:1rem;

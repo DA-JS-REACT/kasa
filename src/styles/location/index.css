@@ -1,5 +1,6 @@
 .locationWrapper{
-    width: 100%;
+    width: 1240px;
+    max-width: 1240px;
 }
 
 .location {
@@ -23,7 +24,7 @@
 }
 
 .location-title  h1 {
-    font-size:calc(var(--title-h1) - 1rem);
+    font-size:calc(var(--title-h1) - 0.5rem);
 }
 .location-title  p {
     margin-top:10px;
@@ -65,11 +66,14 @@
     display: flex;
     justify-content: flex-end;
 }
+.location-rate img {
+    height: 27px;
+}
 
 
 .location-title p,
 .host-name {
-    font-size:calc((var(--title-h1) - 0.5rem ) / 2 );
+    font-size:calc(var(--title-h1)  / 2 );
 }
 
 .host-name  {
@@ -95,15 +99,19 @@
     margin-top:var(--margin-element);
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 375px) {
+
+    .locationWrapper{
+        width: 335px;
+    }
     .location-header {
         flex-direction:column;
     }
     .location-title  h1 {
-        font-size:calc(var(--title-h1) - 2rem);
+        font-size:calc(var(--title-h1) - 1.5rem);
     }
     .location-title  p {
-        font-size:calc(var(--title-h1) - 2.3rem);
+        font-size:calc(var(--title-h1) - 2rem);
     }
     .tag {
         font-size:calc(var(--size) - 2px );

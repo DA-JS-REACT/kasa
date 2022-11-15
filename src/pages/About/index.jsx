@@ -9,10 +9,10 @@ function About() {
             <section className="about">
                 <Dropdown title="Fiabilité">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Obcaecati veniam facilis eligendi harum debitis ad
-                        ducimus hic soluta? Dolore ab rerum doloribus tenetur
-                        eaque ducimus esse delectus, eos illo quisquam.
+                        Les annonces postées sur Kasa garantissent une fiabilité
+                        totale. Les photos sont conformes aux logements, et
+                        toutes les informations sont régulièrement vérifiées par
+                        nos équipes.
                     </p>
                 </Dropdown>
                 <Dropdown title="Respect">
@@ -25,18 +25,20 @@ function About() {
                 </Dropdown>
                 <Dropdown title="Service">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Obcaecati veniam facilis eligendi harum debitis ad
-                        ducimus hic soluta? Dolore ab rerum doloribus tenetur
-                        eaque ducimus esse delectus, eos illo quisquam.
+                        Nos équipes se tiennent à votre disposition pour vous
+                        fournir une expérience parfaite. N'hésitez pas à nous
+                        contacter si vous avez la moindre question.
                     </p>
                 </Dropdown>
                 <Dropdown title="Sécurité">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Obcaecati veniam facilis eligendi harum debitis ad
-                        ducimus hic soluta? Dolore ab rerum doloribus tenetur
-                        eaque ducimus esse delectus, eos illo quisquam.
+                        La sécurité est la priorité de Kasa. Aussi bien pour nos
+                        hôtes que pour les voyageurs, chaque logement correspond
+                        aux critères de sécurité établis par nos services. En
+                        laissant une note aussi bien à l'hôte qu'au locataire,
+                        cela permet à nos équipes de vérifier que les standards
+                        sont bien respectés. Nous organisons également des
+                        ateliers sur la sécurité domestique pour nos hôtes.
                     </p>
                 </Dropdown>
             </section>

@@ -14,7 +14,7 @@
   --default-font:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   --size: 12px;
   --nav-footer: 1.5rem;
-  --title-h1:3.5rem;
+  --title-h1:3rem;
   /* margin */
   --margin-body: 40px 100px 0;
   --margin-element:40px;
@@ -34,15 +34,16 @@ a {
 }
 
 .container {
-  margin: var(--margin-body);
+  /* margin: var(--margin-body); */
+  margin-top:40px;
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
+  align-items:center;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 375px) {
   .container {
-    --margin-body:20px 15px 0px;
+    margin-top:20px;
   }
 
 }

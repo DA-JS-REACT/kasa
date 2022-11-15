@@ -4,13 +4,28 @@ import { useState } from 'react'
 
 function Dropdown({ title, children }) {
     const [isOpen, setIsOpen] = useState(false)
+    const [isClose, setIsClose] = useState(true)
     const handleClick = (e) => {
         setIsOpen(isOpen === false ? true : false)
+        setIsClose(isClose === true ? false : true)
         e.currentTarget.classList.toggle('dropdown-header__img-open')
+        // e.currentTarget.classList.toggle('dropdown-header__img-close')
         // const parentElement = e.currentTarget.parentElement
         // const contain = parentElement.nextSibling
         // contain.classList.toggle('dropdown-content-open')
     }
+
+    let className = 'dropdown-content'
+    if (isOpen) {
+        className += ' dropdown-content-open'
+    } else {
+        className += ' dropdown-content-close'
+    }
+    // let test = 'dropdown-header__img'
+    // if (!isClose) {
+    //     test += ' dropdown-header__img-open'
+    // }
+
     return (
         <div className="dropdownWrapper">
             <div className="dropdown">
@@ -18,7 +33,7 @@ function Dropdown({ title, children }) {
                     <span className="dropdown-header__title">{title}</span>
                     <img
                         onClick={(e) => handleClick(e)}
-                        className="dropdown-header__img "
+                        className="dropdown-header__img"
                         src={angle}
                         alt={angle}
                     />
@@ -30,7 +45,7 @@ function Dropdown({ title, children }) {
                 ) : (
                     <div className=" dropdown-content ">{children}</div>
                 )} */}
-                <div
+                {/* <div
                     className={
                         isOpen
                             ? 'dropdown-content dropdown-content-open'
@@ -38,7 +53,8 @@ function Dropdown({ title, children }) {
                     }
                 >
                     {children}
-                </div>
+                </div> */}
+                <div className={className}>{children}</div>
             </div>
         </div>
     )
