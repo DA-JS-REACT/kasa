@@ -27,6 +27,7 @@ function Home() {
                             id={logement.id}
                             cover={logement.cover}
                             title={logement.title}
+                            link="location"
                         />
                     ))}
                 </section>

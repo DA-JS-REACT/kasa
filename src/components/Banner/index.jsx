@@ -4,15 +4,15 @@ function Banner({ img, title }) {
     return (
         <section className="banner">
             <img className="banner-img" src={img} alt="{img}" />
-            <h1 className="banner-title">{title}</h1>
+            {title && <h1 className="banner-title">{title}</h1>}
         </section>
     )
 }
 Banner.propTypes = {
-    img: PropTypes.string,
+    img: PropTypes.string.isRequired,
     title: PropTypes.string,
 }
-Banner.defaultProps = {
-    title: '',
-}
+// Banner.defaultProps = {
+//     title: '',
+// }
 export default Banner

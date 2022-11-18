@@ -3,20 +3,20 @@ import angle from '../../assets/angle.svg'
 import { useState } from 'react'
 
 function Carousel({ pictures }) {
-    const [isIndex, setIsIndex] = useState(0)
-    const [numberOfSlides] = useState(pictures.length)
+    const [index, setIndex] = useState(0)
+    const numberOfSlides = pictures.length
     const handleNext = () => {
-        if (isIndex < numberOfSlides - 1) {
-            setIsIndex((isIndex) => isIndex + 1)
+        if (index < numberOfSlides - 1) {
+            setIndex((index) => index + 1)
         } else {
-            setIsIndex(0)
+            setIndex(0)
         }
     }
     const handlePrevious = () => {
-        if (isIndex <= numberOfSlides - 1 && isIndex > 0) {
-            setIsIndex((isIndex) => isIndex - 1)
+        if (index <= numberOfSlides - 1 && index > 0) {
+            setIndex((index) => index - 1)
         } else {
-            setIsIndex(numberOfSlides - 1)
+            setIndex(numberOfSlides - 1)
         }
     }
     return (
@@ -29,7 +29,7 @@ function Carousel({ pictures }) {
                     alt="previous"
                 />
             </div>
-            <img className="caroussel-img" src={pictures[isIndex]} />
+            <img className="caroussel-img" src={pictures[index]} />
             <div className="caroussel-right">
                 <img
                     onClick={handleNext}
@@ -40,7 +40,7 @@ function Carousel({ pictures }) {
             </div>
             <div className="caroussel-counter">
                 <span>
-                    {isIndex + 1} / {numberOfSlides}
+                    {index + 1} / {numberOfSlides}
                 </span>
             </div>
         </div>
