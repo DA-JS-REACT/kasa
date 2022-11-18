@@ -38,3 +38,18 @@
     left: 37%;
  }
 }
+@media screen and (min-width: 376px ) and (max-width: 768px) {
+    .banner {
+        height: 8.5rem;
+     }
+     .banner-img {
+        height:100%;
+        object-fit: cover;
+        object-position: center bottom;
+     }
+     .banner-title{
+        font-size: 1.7rem;
+        left: 37%;
+     }
+
+  }

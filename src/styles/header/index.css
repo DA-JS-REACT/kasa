@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
-    height:4rem;
+    height:10%;
     width: 1240px;
     max-width: 1240px;
 }
@@ -23,7 +23,24 @@
 @media screen and (max-width: 375px) {
     .headerWrapper {
         width:335px;
-        height:3.8rem
+
+    }
+    .nav-header{
+        --nav-footer:1rem;
+        text-transform: uppercase;
+    }
+    .nav-header a:first-child {
+        margin-right: 20px;
+    }
+   .logo {
+     width: 8rem;
+     height:2.5rem;
+   }
+
+  }
+  @media screen and (min-width: 376px ) and (max-width: 768px) {
+    .headerWrapper {
+        width:80%;
 
     }
     .nav-header{

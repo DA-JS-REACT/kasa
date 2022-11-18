@@ -1,11 +1,10 @@
 .errorWrapper {
     display:flex;
     flex-direction:column;
-    justify-content:space-between;
+    justify-content:space-around;
     color: var(--primary-color);
-    /* margin: var(--margin-element) auto; */
     width: 100%;
-    height:35rem;
+    min-height: 633px;
 }
 .errorBody {
     display:flex;
@@ -23,7 +22,8 @@
 }
 
 .errorLink {
-    margin-top:calc(var(--margin-element) + 20px);
+    /* margin-top:calc(var(--margin-element) + 20px); */
+    margin-top:var(--margin-element);
     text-align:center;
 }
 .errorLink a {
@@ -32,7 +32,7 @@
 
 @media screen and  (max-width: 375px) {
     .errorWrapper {
-        height:511px;
+        min-height: 530px;
         justify-content:normal;
         align-items:center;
     }

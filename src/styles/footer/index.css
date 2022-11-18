@@ -1,8 +1,7 @@
 .footerWrapper {
     background: var(--background-footer);
     width: 100%;
-    height: 12rem;
-  
+    height: 11.5rem;
     display: flex;
     flex-direction: column;
     justify-content:center;

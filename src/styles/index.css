@@ -7,7 +7,6 @@
   --primary-color: #FF6060;
   --secondary-color: #FFFFFF;
   --tertiary-color: #F6F6F6;
-  
 
   /* font */
   --font: 'Montserrat';
@@ -15,6 +14,7 @@
   --size: 12px;
   --nav-footer: 1.5rem;
   --title-h1:3rem;
+
   /* margin */
   --margin-body: 40px 100px 0;
   --margin-element:40px;
@@ -26,7 +26,6 @@ body {
   font-family:var(--font , var(--default-font));
   background: var(--background-body);
   font-size: var(--size);
-  
 }
 
 a {
@@ -35,6 +34,8 @@ a {
 
 .container {
   /* margin: var(--margin-body); */
+  /* height: calc(100vh - 12rem);*/
+  height: 100%;
   margin-top:40px;
   display: flex;
   flex-direction: column;
