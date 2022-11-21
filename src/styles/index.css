@@ -33,8 +33,6 @@ a {
 }
 
 .container {
-  /* margin: var(--margin-body); */
-  /* height: calc(100vh - 12rem);*/
   height: 100%;
   margin-top:40px;
   display: flex;

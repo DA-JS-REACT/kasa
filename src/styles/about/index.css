@@ -26,3 +26,22 @@
         width:100%;
     }
 }
+
+@media screen and (min-width: 376px ) and (max-width: 768px) {
+    .aboutWrapper {
+        width:80%;
+        min-height: 504px;
+    }
+
+    .about {
+        width:90%;
+    }
+
+  }
+  @media screen and (min-width: 769px ) and (max-width: 1230px) {
+    .aboutWrapper {
+        width:90%;
+        min-height: 400px;
+    }
+
+  }

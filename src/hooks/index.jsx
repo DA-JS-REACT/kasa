@@ -26,23 +26,6 @@ export function useFetch(url) {
             } finally {
                 setLoading(false)
             }
-            // fetch(url, fetchOptions)
-            //     .then((res) => {
-            //         console.log(res)
-            //         if (res.ok) {
-            //             setLoading(false)
-            //             return res.json()
-            //         }
-            //     })
-            //     .then(
-            //         (result) => {
-            //             setData(result)
-            //         },
-            //         (error) => {
-            //             setLoading(true)
-            //             setError(error)
-            //         }
-            //     )
         }
 
         fetchData()

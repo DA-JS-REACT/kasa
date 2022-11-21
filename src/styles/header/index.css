@@ -56,3 +56,21 @@
    }
 
   }
+  @media screen and (min-width: 769px ) and (max-width: 1230px) {
+    .headerWrapper {
+        width:90%;
+
+    }
+    .nav-header{
+        --nav-footer:1rem;
+        text-transform: uppercase;
+    }
+    .nav-header a:first-child {
+        margin-right: 20px;
+    }
+   .logo {
+     width: 8rem;
+     height:2.5rem;
+   }
+
+  }

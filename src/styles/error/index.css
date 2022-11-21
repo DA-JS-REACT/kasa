@@ -22,7 +22,6 @@
 }
 
 .errorLink {
-    /* margin-top:calc(var(--margin-element) + 20px); */
     margin-top:var(--margin-element);
     text-align:center;
 }
@@ -32,7 +31,7 @@
 
 @media screen and  (max-width: 375px) {
     .errorWrapper {
-        min-height: 530px;
+        min-height: 564px;
         justify-content:normal;
         align-items:center;
     }
@@ -51,3 +50,45 @@
     }
 
 }
+@media screen and (min-width: 376px ) and (max-width: 768px) {
+    .errorWrapper {
+        min-height: 544px;
+        justify-content:normal;
+        align-items:center;
+    }
+
+    .errorBody {
+        height:350px;
+        justify-content:center;
+    }
+
+    .errorBody-title{
+        font-size: 7rem;
+    }
+    .errorBody-message,
+    .errorLink a {
+        font-size: 1rem;
+    }
+
+  }
+  @media screen and (min-width: 769px ) and (max-width: 1230px) {
+    .errorWrapper {
+        min-height: 504px;
+        justify-content:normal;
+        align-items:center;
+    }
+
+    .errorBody {
+        height:350px;
+        justify-content:center;
+    }
+
+    .errorBody-title{
+        font-size: 10rem;
+    }
+    .errorBody-message,
+    .errorLink a {
+        font-size: 1.5rem;
+    }
+
+  }

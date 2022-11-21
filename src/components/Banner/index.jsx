@@ -12,7 +12,5 @@ Banner.propTypes = {
     img: PropTypes.string.isRequired,
     title: PropTypes.string,
 }
-// Banner.defaultProps = {
-//     title: '',
-// }
+
 export default Banner

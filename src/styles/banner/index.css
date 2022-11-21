@@ -48,8 +48,28 @@
         object-position: center bottom;
      }
      .banner-title{
-        font-size: 1.7rem;
-        left: 37%;
+         width: 70%;
+         font-size: 1.8rem;
+         left: 50%;
+         top:50%;
+         transform: translate(-50% -50%);
      }
 
+  }
+
+  @media screen and (min-width: 769px ) and (max-width:1230px){
+   .banner {
+      height: 8.5rem;
+   }
+   .banner-img {
+      height:100%;
+      object-fit: cover;
+      object-position: center bottom;
+   }
+   .banner-title{
+      font-size: 1.9rem;
+      left: 50%;
+      top:50%;
+      transform: translate(-40% -60%);
+   }
   }
