@@ -1,10 +1,9 @@
 .aboutWrapper {
     width: 1240px;
     max-width: 1240px;
-    min-height: 593px;
+    flex: 1;
     margin-top: var(--margin-element);
     /* margin-bottom:59px; */
-   
 }
 
 .about {
@@ -13,35 +12,24 @@
 }
 
 .about .dropdownWrapper:nth-child(n) {
-    margin-top:20px;
+    margin-top: 20px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
     .aboutWrapper {
-        width:335px;
-        min-height: 490px;
+        width: 90%;
     }
 
     .about {
-        width:100%;
+        width: 100%;
     }
 }
 
-@media screen and (min-width: 376px ) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1230px) {
     .aboutWrapper {
-        width:80%;
-        min-height: 504px;
+        width: 90%;
     }
-
     .about {
-        width:90%;
+        width: 100%;
     }
-
-  }
-  @media screen and (min-width: 769px ) and (max-width: 1230px) {
-    .aboutWrapper {
-        width:90%;
-        min-height: 400px;
-    }
-
-  }
+}

@@ -7,7 +7,6 @@
 }
 
 .caroussel-img {
-
     object-fit: cover;
     object-position: center;
     width: 100%;
@@ -32,12 +31,15 @@
     left: 50%;
     font-size: 18px;
 }
+.caroussel-counter-mobilfirst {
+    visibility: visible;
+}
 
 .caroussel-left {
-    left:20px;
+    left: 20px;
 }
 .caroussel-right {
-    right:20px;
+    right: 20px;
 }
 .caroussel-icon {
     width: 90px;
@@ -51,7 +53,6 @@
 .next {
     transform: rotate(90deg);
 }
-
 
 @media (max-width: 768px) {
     .caroussel {
@@ -68,5 +69,7 @@
         left: 50%;
         font-size: 12px;
     }
-
-  }
+    .caroussel-counter-mobilfirst {
+        visibility: hidden;
+    }
+}

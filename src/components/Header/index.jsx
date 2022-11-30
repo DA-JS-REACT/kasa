@@ -22,7 +22,7 @@ function Header() {
                     className={({ isActive }) => (isActive ? 'active' : '')}
                     end
                 >
-                    Acceuil
+                    Accueil
                 </NavLink>
                 <NavLink
                     to="/about"

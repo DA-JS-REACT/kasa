@@ -1,50 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
 :root {
-  /* color */
-  /* #E5E5E5*/
-  --background-body:#FFFFFF;
-  --background-footer: #000000;
-  --background-card:#F7F7F7;
-  --primary-color: #FF6060;
-  --secondary-color: #FFFFFF;
-  --tertiary-color: #F6F6F6;
+    /* color */
+    /* #E5E5E5*/
+    --background-body: #ffffff;
+    --background-footer: #000000;
+    --background-card: #f7f7f7;
+    --primary-color: #ff6060;
+    --secondary-color: #ffffff;
+    --tertiary-color: #f6f6f6;
 
-  /* font */
-  --font: 'Montserrat';
-  --default-font:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  --size: 12px;
-  --nav-footer: 1.5rem;
-  --title-h1:3rem;
+    /* font */
+    --font: 'Montserrat', sans-serif;
+    --default-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+        'Lucida Sans', Arial, sans-serif;
+    --size: 12px;
+    --nav-footer: 1.5rem;
+    --title-h1: 3rem;
 
-  /* margin */
-  --margin-body: 40px 100px 0;
-  --margin-element:40px;
-
+    /* margin */
+    --margin-body: 40px 100px 0;
+    --margin-element: 40px;
 }
 
-
 body {
-  font-family:var(--font , var(--default-font));
-  background: var(--background-body);
-  font-size: var(--size);
+    font-family: var(--font, var(--default-font));
+    font-weight: 500;
+    background: var(--background-body);
+    font-size: var(--size);
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 .container {
-  height: 100%;
-  margin-top:40px;
-  display: flex;
-  flex-direction: column;
-  align-items:center;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@media screen and (max-width: 375px) {
-  .container {
-    margin-top:20px;
-  }
-
+@media screen and (max-width: 767px) {
+    .container {
+        margin-top: 15px;
+    }
 }
 @import url(./header/index.css);
 @import url(./footer/index.css);

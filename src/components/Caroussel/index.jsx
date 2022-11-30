@@ -22,23 +22,31 @@ function Carousel({ pictures }) {
     return (
         <div className="caroussel">
             <div className="caroussel-left">
-                <img
-                    onClick={handlePrevious}
-                    className="caroussel-icon previous"
-                    src={angle}
-                    alt="previous"
-                />
+                {numberOfSlides != 1 ? (
+                    <img
+                        onClick={handlePrevious}
+                        className="caroussel-icon previous"
+                        src={angle}
+                        alt="previous"
+                    />
+                ) : (
+                    ' '
+                )}
             </div>
             <img className="caroussel-img" src={pictures[index]} />
             <div className="caroussel-right">
-                <img
-                    onClick={handleNext}
-                    className="caroussel-icon next"
-                    src={angle}
-                    alt="next"
-                />
+                {numberOfSlides != 1 ? (
+                    <img
+                        onClick={handleNext}
+                        className="caroussel-icon next"
+                        src={angle}
+                        alt="next"
+                    />
+                ) : (
+                    ' '
+                )}
             </div>
-            <div className="caroussel-counter">
+            <div className="caroussel-counter caroussel-counter-mobilfirst">
                 <span>
                     {index + 1} / {numberOfSlides}
                 </span>

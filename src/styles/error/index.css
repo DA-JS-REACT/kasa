@@ -1,19 +1,21 @@
 .errorWrapper {
-    display:flex;
-    flex-direction:column;
-    justify-content:space-around;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
     color: var(--primary-color);
     width: 100%;
-    min-height: 633px;
+    height: 70vh;
 }
 .errorBody {
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
-
+    height: 80%;
 }
-.errorBody-title{
+.errorBody-title {
+    font-weight: 700;
     font-size: 20rem;
 }
 
@@ -22,73 +24,50 @@
 }
 
 .errorLink {
-    margin-top:var(--margin-element);
-    text-align:center;
+    margin-top: var(--margin-element);
+    height: 20%;
+    text-align: center;
 }
 .errorLink a {
-    font-size:1.3rem;
+    font-size: 1.3rem;
 }
 
-@media screen and  (max-width: 375px) {
+@media screen and (max-width: 767px) {
     .errorWrapper {
-        min-height: 564px;
-        justify-content:normal;
-        align-items:center;
+        height: 60vh;
     }
 
-    .errorBody {
-        height:280px;
-        justify-content:center;
-    }
-
-    .errorBody-title{
+    .errorBody-title {
         font-size: 6rem;
     }
+    .errorBody-message {
+        width: 60%;
+        text-align: center;
+        line-height: 25px;
+        margin-top: 15px;
+    }
     .errorBody-message,
     .errorLink a {
         font-size: 1rem;
     }
-
 }
-@media screen and (min-width: 376px ) and (max-width: 768px) {
+
+@media screen and (min-width: 768px) and (max-width: 1230px) {
     .errorWrapper {
-        min-height: 544px;
-        justify-content:normal;
-        align-items:center;
+        justify-content: normal;
+        align-items: center;
     }
 
     .errorBody {
-        height:350px;
-        justify-content:center;
+        height: 350px;
+        justify-content: center;
     }
 
-    .errorBody-title{
-        font-size: 7rem;
-    }
-    .errorBody-message,
-    .errorLink a {
-        font-size: 1rem;
-    }
-
-  }
-  @media screen and (min-width: 769px ) and (max-width: 1230px) {
-    .errorWrapper {
-        min-height: 504px;
-        justify-content:normal;
-        align-items:center;
-    }
-
-    .errorBody {
-        height:350px;
-        justify-content:center;
-    }
-
-    .errorBody-title{
+    .errorBody-title {
         font-size: 10rem;
     }
     .errorBody-message,
     .errorLink a {
         font-size: 1.5rem;
     }
-
-  }
+}
